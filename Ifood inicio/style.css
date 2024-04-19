@@ -1,183 +1,163 @@
+
 * {
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
+
+/* Estilos para o corpo da página */
 body {
-    height: 100vh;
-    margin: 0 auto;
-    font-family: Helvetica, sans-serif;
-    font-size: 16px;
+    height: 100vh; /* Define a altura do corpo como 100% da altura da janela de visualização */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+    font-family: Helvetica, sans-serif; /* Define a família de fontes */
+    font-size: 16px; /* Define o tamanho da fonte */
 }
+
+/* Define que todos os elementos com a classe .container ocupam 100% do espaço disponível */
 .container {
     width: 100%;
     height: 100%;
 }
+
+/* Estilos para a seção de destaque ("hero") */
 .hero {
-    height: 80%;
-    max-height: 520px;
-    background: #f5f3f4;
+    height: 80%; /* Define a altura como 80% da altura do contêiner pai */
+    max-height: 520px; /* Altura máxima */
+    background: #f5f3f4; /* Cor de fundo */
 }
+
+/* Estilos para o cabeçalho */
 .header {
-    display: flex;
-    justify-content: flex-end;
-    margin: 0 45px;
+    display: flex; /* Usa flexbox para layout */
+    justify-content: flex-end; /* Alinha os itens à direita */
+    margin: 0 45px; /* Margem superior e inferior de 0, margem direita e esquerda de 45px */
 }
+
+/* Estilos para a lista dentro do cabeçalho */
 .header ul {
-    display: flex;
-    align-items: center;
+    display: flex; /* Usa flexbox para layout */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
 }
+
+/* Estilos para os itens da lista no cabeçalho */
 .header ul li {
-    list-style: none;
-    margin: 0 25px;
-    color: #3e3e3e;
+    list-style: none; 
+    margin: 0 25px; /* Margem direita e esquerda de 25px */
+    color: #3e3e3e; /* Cor do texto */
 }
+
+/* Estilos para links nos itens da lista no cabeçalho */
 .header ul li a {
-    text-decoration: none;
-    color: #3e3e3e;
+    text-decoration: none; /* Remove a decoração do link */
+    color: #3e3e3e; /* Cor do texto */
 }
+
+/* Estilos para links quando passam o mouse sobre eles */
 .header ul li a:hover {
-    color: #ea1d2c;
+    color: #ea1d2c; /* Altera a cor do texto ao passar o mouse */
 }
-.header ul li {
-    color: #ea1d2c;
-}
+
+/* Estilos para o último item da lista no cabeçalho */
 .header ul li:last-child {
-    background: #fff;
-    padding: 15px 45px; 
-    margin: 0 0 0 25px;
-    border-radius: 5px;
-    border: 1px solid #dcdcdc;
-    font-weight: 500;
+    color: #ea1d2c; /* Cor do texto */
+    background: #fff; /* Cor de fundo */
+    padding: 15px 45px; /* Preenchimento de 15px superior e inferior, 45px direita e esquerda */
+    margin: 0 0 0 25px; /* Margem à direita de 25px */
+    border-radius: 5px; /* Borda arredondada */
+    border: 1px solid #dcdcdc; /* Borda sólida */
+    font-weight: 500; /* Peso da fonte */
 }
+
+/* Estilos para o último item da lista no cabeçalho quando passa o mouse sobre ele */
 .header ul li:last-child:hover {
-    background: #ea1d2c;
-    color: #fff;
+    background: #ea1d2c; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
 }
+
+/* Estilos para a seção de fundo ("background") */
 .bg {
-    display: flex;
-    height: 100%;
-    padding-bottom: 20px;
+    display: flex; 
+    height: 100%; 
+    padding-bottom: 20px; /* Preenchimento inferior de 20px */
 }
+
+/* Estilos para a parte esquerda da seção de fundo */
 .left img {
-    position: absolute;
-    width: 400px;
-    top: 0;
-    left: 0;
+    position: absolute; /* Posição absoluta */
+    width: 400px; /* Largura */
+    top: 0; /* Alinhamento superior */
+    left: 0; /* Alinhamento esquerdo */
 }
+
+/* Estilos para o elemento SVG na parte esquerda */
 .left .svg {
-    width: 160px;
-    height: 180px;
-    left: 50px;
-    top: 257px;
+    width: 160px; /* Largura */
+    height: 180px; /* Altura */
+    left: 50px; /* Alinhamento esquerdo */
+    top: 257px; /* Alinhamento superior */
 }
+
+/* Estilos para a parte direita da seção de fundo */
 .right img {
-    position: absolute;
-    width: 240px;
-    top: 204px;
-    right: 0;
+    position: absolute; /* Posição absoluta */
+    width: 240px; /* Largura */
+    top: 204px; /* Alinhamento superior */
+    right: 0; /* Alinhamento direito */
 }
+
+/* Estilos para o elemento SVG na parte direita */
 .right .svg {
-    width: 198px;
-    height: 172px;
-    right: 138px;
-    top: 106px;
-    transform: rotate(-8deg); 
+    width: 198px; /* Largura */
+    height: 172px; /* Altura */
+    right: 138px; /* Alinhamento direito */
+    top: 106px; /* Alinhamento superior */
+    transform: rotate(-8deg); /* Rotação */
 }
+
+/* Estilos para o conteúdo principal */
 .content {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: flex; 
+    flex-direction: column; /* Direção da flexão */
+    justify-content: center; /* Alinhamento vertical */
+    align-items: center; /* Alinhamento horizontal */
 }
+
+/* Estilos para o logotipo */
 .content .logo {
-    width: 120px;
+    width: 120px; 
 }
+
+/* Estilos para o título */
 .content h2 {
-    font-size: 2.5rem;
-    color: #3e3e3e;
-    font-weight: 600;
-    margin: 20px 0;
+    font-size: 2.5rem; /* Tamanho da fonte */
+    color: #3e3e3e; /* Cor do texto */
+    font-weight: 600; /* Peso da fonte */
+    margin: 20px 0; /* Margem superior e inferior de 20px, margem direita e esquerda de 0 */
 }
+
+/* Estilos para o parágrafo */
 .content p {
-    color: #3e3e3e;
-    font-size: 0.900rem;
-    font-weight: 500;
+    color: #3e3e3e; /* Cor do texto */
+    font-size: 0.900rem; /* Tamanho da fonte */
+    font-weight: 500; /* Peso da fonte */
 }
+
+/* Estilos para o formulário */
 .form {
-    width: 100%;
-    max-width: 780px;
-    display: flex;
+    width: 100%; 
+    max-width: 780px; 
+    display: flex; 
 }
+
+/* Estilos para a caixa de pesquisa */
 .form .search {
-    width: 100%;
-    max-width: 650px;
-    background: #fff;
-    height: 50px;
-    border-radius: 4px;
-    margin-right: 20px;
-    display: flex;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    width: 100%; 
+    max-width: 650px; 
+    background: #fff; 
+    height: 50px; 
+    border-radius: 4px; /* Borda arredondada */
+    margin-right: 20px; 
+    display: flex; 
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08); /* Sombra */
 }
-.form .search img {
-    width: 26px;
-    margin: 0 20px;
-}
-.form .search input {
-    width: 100%;
-    background: transparent;
-    border: 0;
-    outline: none;
-    font-size: 1rem;
-}
-.form .search input::placeholder {
-    font-weight: 400;
-    color: #a6a6a6;
-}
-.form button {
-    width: 210px;
-    background: #ea1d2c;
-    color: #fff;
-    font-weight: 400;
-    border: 0;
-    border-radius: 4px;
-}
-.tags {
-    margin: 30px 0;
-}
-.tags span {
-    font-size: 0.875rem;
-    font-weight: 400;
-    color: #818181;
-    border: 1px solid #ccc;
-    padding: 5px;
-    border-radius: 10px;
-    margin: 6px;
-}
-.banner {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-.banner img {
-    width: 100%;
-    max-width: 390px;
-    margin: 0 10px;
-    transition: 0.2s;
-}
-.banner img:hover {
-    transform: scale(1.02);
-}
-.footer {
-    margin: 20px;
-    border-top: 1px solid #dcdcdc;
-    display: flex;
-    padding: 20px 0;
-}
-.footer img {
-    width: 50px;
-}
-.footer span {
-    font-size: 0.8125rem;
-    color: #818181;
-    margin: 0 20px;
-}
+
+/*
